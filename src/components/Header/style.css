@@ -1,0 +1,16 @@
+.Header {
+  background-color: #3a424e;
+  height: 60px;
+  padding: 20px;
+  color: white;
+}
+
+.Header__logo {
+  vertical-align: middle;
+  display: inline-block;
+  width: 30px;
+}
+
+.Header__title {
+  display: inline-block;
+}
