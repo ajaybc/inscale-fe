@@ -3,8 +3,9 @@ import {
   Route
 } from "react-router-dom";
 
-import Campaigns from './pages/Campaigns';
 import Header from './components/Header';
+import Campaigns from './pages/Campaigns';
+
 import './App.css';
 
 class App extends Component {

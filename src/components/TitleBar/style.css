@@ -1,0 +1,15 @@
+.TitleBar {
+  background-color: #fff;
+  box-shadow: 0.1px 1px 4px 0 #e7eeef;
+  padding: 20px 0;
+}
+
+.TitleBar__title {
+  margin: 0 0 10px 0;
+  font-size: 1.6em;
+  color: #0e141e;
+}
+
+.TitleBar__summary {
+  color: #b7c9cc;
+}
