@@ -1,0 +1,29 @@
+.SearchBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SearchBar__left .react-datepicker__input-container > input {
+  padding: 8px;
+  /* width: 100%;
+  max-width: 250px; */
+  width: 250px;
+}
+
+.SearchBar__left > div {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.SearchBar__searchField {
+  padding: 8px;
+  width: 250px;
+}
+
+.SearchBar__searchBtn {
+  background: #1ba94c;
+  border-color: #1ba94c;
+  color: #FFF;
+  padding: 8px;
+  /* box-shadow: 0 4px 12px 0 rgba(27,169,76,.5); */
+}
