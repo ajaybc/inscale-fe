@@ -1,0 +1,15 @@
+.Status__status {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.Status__status--active {
+  background: #1ba94c;
+}
+
+.Status__status--inactive {
+  background: #da235e;
+}
