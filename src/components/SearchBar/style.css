@@ -5,9 +5,10 @@
 
 .SearchBar__left .react-datepicker__input-container > input {
   padding: 8px;
-  /* width: 100%;
-  max-width: 250px; */
   width: 250px;
+}
+.SearchBar__left .react-datepicker__input-container .react-datepicker__close-icon::after {
+  background: #1ba94c;
 }
 
 .SearchBar__left > div {
@@ -25,5 +26,8 @@
   border-color: #1ba94c;
   color: #FFF;
   padding: 8px;
-  /* box-shadow: 0 4px 12px 0 rgba(27,169,76,.5); */
+}
+
+.SearchBar__searchBtn:focus {
+  outline: none;
 }
