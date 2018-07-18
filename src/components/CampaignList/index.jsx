@@ -4,7 +4,6 @@ import 'react-datepicker/dist/react-datepicker.css';
 import './style.css';
 import Status from '../Status';
 import Price from '../Price';
-import Pagination from '../Pagination';
 
 const DATE_FORMAT = 'DD/MM/Y';
 
@@ -36,15 +35,6 @@ export default class CampaignList extends Component {
           }
         </tbody>
       </table>
-      <Pagination 
-        pageCount={100}
-        marginPagesDisplayed={2}
-        pageRangeDisplayed={5}
-        forcePage={50}
-        onPageChange={(a, b) => {
-          console.log(a, b);
-        }}
-      />
     </div>;
   }
 }
