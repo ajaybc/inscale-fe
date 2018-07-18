@@ -15,10 +15,10 @@ export default class CampaignList extends Component {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-            <th>Active</th>
-            <th>Budget</th>
+            <th width="20%">Start Date</th>
+            <th width="20%">End Date</th>
+            <th width="15%">Active</th>
+            <th width="15%">Budget</th>
           </tr>
         </thead>
         <tbody>
@@ -32,6 +32,11 @@ export default class CampaignList extends Component {
                 <td><Price>{campaign.Budget}</Price></td>
               </tr>
             })
+          }
+          {
+            campaigns.length === 0 && <tr>
+              <td colSpan="5" style={{'textAlign':'center'}}>No campaigns found</td>
+            </tr>
           }
         </tbody>
       </table>
