@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Price renders correctly when a value of 2000 is provided 1`] = `"2K USD"`;
+
+exports[`Price renders correctly when a very large value is provided 1`] = `"99999.999999M USD"`;

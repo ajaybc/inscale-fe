@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Status displays active when current date is between the start and end date 1`] = `
+Array [
+  <div
+    className="Status__status Status__status--active"
+/>,
+  " ",
+  "active",
+]
+`;
+
+exports[`Status displays inactive when current date is not between the start and end date 1`] = `
+Array [
+  <div
+    className="Status__status Status__status--inactive"
+/>,
+  " ",
+  "inactive",
+]
+`;

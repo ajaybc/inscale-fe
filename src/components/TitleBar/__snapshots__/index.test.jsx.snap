@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Titlebar renders correctly when title and summary are provided 1`] = `
+<div
+  className="TitleBar"
+>
+  <div
+    className="Container"
+  >
+    <h1
+      className="TitleBar__title"
+    >
+      Test Title
+    </h1>
+    <div
+      className="TitleBar__summary"
+    >
+      Test Summary
+    </div>
+  </div>
+</div>
+`;

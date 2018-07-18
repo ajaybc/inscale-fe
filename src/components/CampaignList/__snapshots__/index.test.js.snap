@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CampaignList renders correctly when campaigns are empty 1`] = `
+<div
+  className="CampaignList"
+>
+  <table
+    className="CampaignList__table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th
+          width="20%"
+        >
+          Start Date
+        </th>
+        <th
+          width="20%"
+        >
+          End Date
+        </th>
+        <th
+          width="15%"
+        >
+          Active
+        </th>
+        <th
+          width="15%"
+        >
+          Budget
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          colSpan="5"
+          style={
+            Object {
+              "textAlign": "center",
+            }
+          }
+        >
+          No campaigns found
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`CampaignList renders correctly when campaigns are provided 1`] = `
+<div
+  className="CampaignList"
+>
+  <table
+    className="CampaignList__table"
+  >
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th
+          width="20%"
+        >
+          Start Date
+        </th>
+        <th
+          width="20%"
+        >
+          End Date
+        </th>
+        <th
+          width="15%"
+        >
+          Active
+        </th>
+        <th
+          width="15%"
+        >
+          Budget
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Divavu
+        </td>
+        <td>
+          11/08/1989
+        </td>
+        <td>
+          11/08/2018
+        </td>
+        <td>
+          <div
+            className="Status__status Status__status--active"
+          />
+           
+          active
+        </td>
+        <td>
+          88.377K USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Jaxspan
+        </td>
+        <td>
+          12/08/1989
+        </td>
+        <td>
+          12/08/2018
+        </td>
+        <td>
+          <div
+            className="Status__status Status__status--active"
+          />
+           
+          active
+        </td>
+        <td>
+          608.715K USD
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Miboo
+        </td>
+        <td>
+          13/08/1989
+        </td>
+        <td>
+          13/08/2018
+        </td>
+        <td>
+          <div
+            className="Status__status Status__status--active"
+          />
+           
+          active
+        </td>
+        <td>
+          2395.073232M USD
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
