@@ -11,16 +11,10 @@ export default class SearchBar extends Component {
   state = {
     query: ''
   }
-  // static getDerivedStateFromProps(nextProps, prevState) {
-  //   if (nextProps.query != prevState.query) {
-  //     return { query: nextProps.query}
-  //   }
-  //   return null;
-  // }
 
   componentDidUpdate(prevProps) {
     if (this.props.query !== prevProps.query) {
-      this.setState({query: this.props.query});
+      this.setState({ query: (this.props.query !== undefined) ? this.props.query:''});
     }
   }
 
