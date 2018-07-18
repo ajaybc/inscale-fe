@@ -6,6 +6,8 @@ import Status from '../Status';
 import Price from '../Price';
 import Pagination from '../Pagination';
 
+const DATE_FORMAT = 'DD/MM/Y';
+
 export default class CampaignList extends Component {
   render () {
     const { campaigns } = this.props;
@@ -25,8 +27,8 @@ export default class CampaignList extends Component {
             campaigns.map((campaign) => {
               return <tr key={campaign.id} >
                 <td>{campaign.name}</td>
-                <td>{campaign.startDate}</td>
-                <td>{campaign.endDate}</td>
+                <td>{campaign.startDate.format(DATE_FORMAT)}</td>
+                <td>{campaign.endDate.format(DATE_FORMAT)}</td>
                 <td><Status startDate={campaign.startDate} endDate={campaign.endDate}/></td>
                 <td><Price>{campaign.Budget}</Price></td>
               </tr>

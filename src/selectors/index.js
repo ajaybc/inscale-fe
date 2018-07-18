@@ -6,6 +6,7 @@ export const filtersSelector = state => state.filters;
 export const areValidFiltersSelector = createSelector(
   filtersSelector,
   filters => {
+    console.log('filters', filters)
     if ((filters.startDate && filters.startDate) && (filters.startDate > filters.endDate)) {
       return false;
     }

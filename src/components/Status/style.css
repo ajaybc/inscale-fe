@@ -4,6 +4,7 @@
   display: inline-block;
   margin-right: 5px;
   border-radius: 5px;
+  text-transform: capitalize;
 }
 
 .Status__status--active {
