@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import ReactPaginate from 'react-paginate';
 
 import 'react-datepicker/dist/react-datepicker.css';
 import './style.css';
 import Status from '../Status';
 import Price from '../Price';
+import Pagination from '../Pagination';
 
 export default class CampaignList extends Component {
   render () {
@@ -34,18 +34,15 @@ export default class CampaignList extends Component {
           }
         </tbody>
       </table>
-      <div className="CampaignList__pagination">
-        <ReactPaginate 
-          pageCount={100}
-          marginPagesDisplayed={2}
-          pageRangeDisplayed={5}
-          forcePage={50}
-          containerClassName={"pagination"}
-          subContainerClassName={"pages pagination"}
-          activeClassName={"active"}
-          // onPageChange={this.handlePageClick}
-          />
-      </div>
+      <Pagination 
+        pageCount={100}
+        marginPagesDisplayed={2}
+        pageRangeDisplayed={5}
+        forcePage={50}
+        onPageChange={(a, b) => {
+          console.log(a, b);
+        }}
+      />
     </div>;
   }
 }

@@ -19,34 +19,3 @@
 
 .CampaignList__table > thead {
 }
-
-.CampaignList__pagination {
-  padding-top: 10px;
-}
-
-.CampaignList__pagination li{
-  display: inline-block;
-}
-
-.CampaignList__pagination li > a{
-  display: block;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
-}
-
-.CampaignList__pagination li.previous > a{
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.CampaignList__pagination li.next > a{
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.CampaignList__pagination li.break{
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #CCC;
-}
