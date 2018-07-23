@@ -16,7 +16,7 @@ import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers';
 
 /* eslint-disable no-underscore-dangle */
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({ serialize: true }) || compose;
+const composeEnhancers = (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({ serialize: true })) || compose;
 /* eslint-enable */
 const store = createStore(
   combineReducers({
